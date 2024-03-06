@@ -3,27 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IT Навігатор</title>
+    <title>Про нас</title>
     <link rel="icon" href="/img/favicon.svg" type="favicon">
     <link rel="stylesheet" href="/css/style.css">
 </head>
-
-<body oncontextmenu="return false;" unselectable="on" onselectstart="return false;">
-    
+<body>
     <header>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <a href="#">
-                <img src="/img/logo.svg" class="logo" alt="IT Навігатор">
+            <a href="index.html">
+                <img src="logo/logo.svg" class="logo" alt="IT Навігатор">
             </a>
         <nav class="navigation">
             <a href="index.html">Головна</a>
-            <a href="#">Про нас</a>
-            <a href="#">Магазин</a>
+            <a href="about.html">Про нас</a>
+            <a href="store.html">Магазин</a>
             <button class="btnContact-popup">Контакт</button>
         </nav>
     </header>
+
+    <section class="map">
+        <div class="google-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2613.442862215776!2d30.9607982!3d49.0782241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d22cbcbceb6789%3A0x87dd3e6aba419851!2sIt%20Navihator!5e0!3m2!1sen!2spl!4v1700525457039!5m2!1sen!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
     
-    <h3>TY LOHOHOHOHOHOHO</h3>
+    <section class="about">
+            <div class="about-text">
+                <h1>IT Навігатор</h1>
+                <p><br />142 вулиця Грушевського, <br />Engelsa St, Zvenyhorodka, <br />Cherkasy Oblast, Ukraine,
+                20200 <br /> +380972770408 <br />Години роботи:<br />ПН - ПТ: 09:00 - 18:00</p> 
+                </p>
+            </div>
+    </section>
+
+    <div class="wrapper">
+        <span class="icon-close">
+            <ion-icon name="close-outline"></ion-icon>
+        </span>
+        
+        <div class="form-box contact">
+            <h2>Контакт</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+                    <input type="Імʼя" id="name" required>
+                    <label>Імʼя та Прізвище</label>
+                </div>
+
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                    <input type="E-mail" id="email" required>
+                    <label>E-mail</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="document-text-outline"></ion-icon></span>
+                    <textarea id="message" rows="4" placeholder="Як можемо вам допомогти?" ></textarea>
+                </div>
+                <button type="sumbit" class="btn">Відправити</button>
+            </form>
+        </div>
+    </div>
     
     <script src="/script/script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
